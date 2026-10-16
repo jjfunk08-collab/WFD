@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What's for Dinner</title>
+<meta name="description" content="Family meal planner, recipe ratings, takeout favorites, and grocery list.">
+<meta name="theme-color" content="#2E6A4C" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#111714" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icons/icon-192.png" type="image/png">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Dinner">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="/app.js" defer></script>
+</head>
+<body>
+<header class="top">
+  <div class="top-in">
+    <div class="brand"><span class="dot" aria-hidden="true">🍽</span>What's for dinner</div>
+    <nav class="tabs" aria-label="Sections">
+      <button class="tab" data-act="tab" data-t="plan"><span class="ic" aria-hidden="true">📅</span>This week</button>
+      <button class="tab" data-act="tab" data-t="recipes"><span class="ic" aria-hidden="true">📖</span>Recipes</button>
+      <button class="tab" data-act="tab" data-t="takeout"><span class="ic" aria-hidden="true">🥡</span>Takeout</button>
+      <button class="tab" data-act="tab" data-t="grocery"><span class="ic" aria-hidden="true">🛒</span>Grocery <span class="ct" id="gcount" hidden></span></button>
+      <button class="tab" data-act="tab" data-t="family"><span class="ic" aria-hidden="true">👪</span>Family &amp; deals</button>
+    </nav>
+    <div class="who"><label for="me">Rating as</label><select id="me"></select></div>
+  </div>
+</header>
+<main id="main"><div class="loading">Setting the table…</div></main>
+<div id="modal" hidden></div>
+<div id="toast" class="toast" hidden role="status"></div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "whats-for-dinner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Family meal planner + grocery list. Static HTML/CSS/JS front end with Vercel serverless API routes.",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=18" }
+}
